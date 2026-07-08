@@ -88,6 +88,31 @@ export function registerIntakeCommands(parent: Command): void {
       }
     })
 
+  group.command('unfollow')
+    .description('批量取消关注订阅源（幂等：未订阅的源不报错）')
+    .requiredOption('--source-ids <ids>', '逗号分隔的 sourceId 列表')
+    .option('--json', 'JSON 输出')
+    .action(async (opts: { sourceIds: string; json?: boolean }) => {
+      const asJson = resolveJsonMode(opts)
+      try {
+        const sourceIds = opts.sourceIds.split(',').map((s) => s.trim()).filter(Boolean)
+        if (sourceIds.length === 0) throw new Error('--source-ids 不能为空')
+        const result = await onboarding.unfollow(sourceIds)
+        if (asJson) return writeJson(result)
+        const r = result as any
+        renderKeyValue('取消关注结果', [
+          ['请求数量', String(r?.data?.requestedCount ?? sourceIds.length)],
+          ['成功取消', String(r?.data?.successCount ?? '-')],
+          ['未订阅跳过', String(r?.data?.notSubscribedCount ?? '-')],
+          ['失败数量', String(r?.data?.failedCount ?? '-')],
+        ])
+      } catch (err) {
+        if (asJson) process.stderr.write(JSON.stringify({ success: false, error: { message: (err as Error).message } }) + '\n')
+        else printError(err, false)
+        process.exit(exitCodeFor(err))
+      }
+    })
+
   group.command('show')
     .description('查看当前画像与 onboarding 状态')
     .option('--json', 'JSON 输出')

@@ -2,10 +2,10 @@
 
 > **日常 agent 入口请优先读 `CLAUDE.md`**（monorepo 根目录 + 各组件目录）—— 它包含发布分支策略、Worktree、Commit 规范、Hooks、Skills 速查表、开发流程规范等执行规则，是 agent 默认读入的事实来源。
 >
-> **本文件聚焦 CLAUDE.md 不展开的内容**：流程图全景、`/feat` × `/fix` 两条路径对比、`/dev` 编码闭环 6 步细则、`/deepreview` 评审矩阵详表、`/release` changelog 格式、Issue 6 段模板、典型会话三例、反模式与升级信号。承接 PRODUCT v2 北极星切换与两端 4+4 入口结构。
+> **本文件聚焦 CLAUDE.md 不展开的内容**：流程图全景、`/feat` × `/fix` 两条路径对比、`/dev` 编码闭环 6 步细则、`/deepreview` 评审矩阵详表、`/release` changelog 格式、Issue 6 段模板、典型会话三例、反模式与升级信号。承接 PRODUCT v3.0「主题早报」设计启动与两端入口结构。
 
-更新时间：2026-05-25
-状态：v2.4.0 薄壳化（去与 CLAUDE.md 双源维护）+ Project 状态自动化
+更新时间：2026-07-08
+状态：公开同步版，保留具体开发流程；仅避免写入密钥、内部风险和私有运维细节
 
 ## 设计理念
 
@@ -183,13 +183,13 @@ Phase 1 立项 → Phase 2 开发 → Phase 3 评审提交
 | 公共策展层 | 精选周刊 | `area:newsletter` / scope `weekly` |
 | 公共策展层 | 主题解读 | `area:topic` / scope `topic` |
 | 公共策展层 | 内容广场 | `area:explore` / scope `explore` |
-| 我的空间 | 我的早报 | `area:my-brief` / scope `my-brief` |
+| 我的空间 | 我的早报 / 主题早报 | `area:my-brief` / scope `my-brief` / `topic-brief` |
 | 我的空间 | 我的关注 | `area:follow` / scope `follow` |
 | 我的空间 | 我的阅读 | `area:my-reading` / scope `reading` |
 | 我的空间 | 我的回顾 | `area:daily-review` / scope `review` |
 | 跨入口 | AI 伴读 / 翻译 / Domain 篇数 / 自定义视图 | scope `copilot` / `translate` / `interest` / `view` |
 
-阶段提示：当前 PRODUCT 处于 **Phase 1 个性化阅读工作流**（PRODUCT §8.2），北极星 = 每天打开「我的早报」的 Pro 用户数。`/feat` 立项时如果北极星预期影响为正，需在 Issue 「现象 / 期望行为」段显式标注。
+阶段提示：当前 PRODUCT 进入 **BestBlogs 3.0 设计启动期**，近期重心是验证 PMF 与用户真实需求，核心方向为「主题早报」：用户通过自然语言定制多份早报。`/feat` 立项时如果会影响主题早报、我的早报或 Pro 价值验证，需在 Issue「现象 / 期望行为」段显式标注。
 
 ---
 

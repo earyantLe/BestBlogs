@@ -279,11 +279,12 @@ BestBlogs is built entirely in public. Here are some behind-the-scenes posts on 
 | [docs/5-DESIGN.md](./docs/5-DESIGN.md) | Visual and interaction guidelines |
 | [docs/6-UI-SPEC.md](./docs/6-UI-SPEC.md) | UI component and interaction specs |
 | [docs/7-CONVENTIONS.md](./docs/7-CONVENTIONS.md) | Development conventions and code style |
-| [docs/8-CURRENT_STATE.md](./docs/8-CURRENT_STATE.md) | Current state, milestones, and roadmap |
-| [docs/9-TESTING.md](./docs/9-TESTING.md) | Test layering and coverage requirements |
+| [docs/8-CURRENT_STATE.md](./docs/8-CURRENT_STATE.md) | Current phase, capabilities, and roadmap |
+| [docs/9-TESTING.md](./docs/9-TESTING.md) | Test layering, coverage principles, and quality gates |
 | [docs/10-TERMINOLOGY.md](./docs/10-TERMINOLOGY.md) | Chinese/English terminology reference |
-| [docs/11-OPERATIONS.md](./docs/11-OPERATIONS.md) | Operations, monitoring, and rollback SOP |
-| [docs/12-WORKFLOW.md](./docs/12-WORKFLOW.md) | Development workflow overview |
+| [docs/11-OPERATIONS.md](./docs/11-OPERATIONS.md) | Operations principles, monitoring, and rollback boundaries |
+| [docs/12-WORKFLOW.md](./docs/12-WORKFLOW.md) | Development workflow, review standards, and delivery loop |
+| [docs/13-INFRA-DEPS.md](./docs/13-INFRA-DEPS.md) | Global technical architecture, runtime components, and external dependencies |
 
 ### Version History
 
@@ -291,7 +292,7 @@ Full bilingual changelogs in [changelog/](./changelog/) (from v2.0.0). Each mino
 
 ### Roadmap & Community
 
-- 🗺️ **Roadmap**: See the "Three-Phase Roadmap" section in [docs/8-CURRENT_STATE.md](./docs/8-CURRENT_STATE.md)
+- 🗺️ **Roadmap**: See the "Roadmap" section in [docs/8-CURRENT_STATE.md](./docs/8-CURRENT_STATE.md)
 - 💬 **GitHub Discussions**: Roadmap discussions, feature requests, monthly updates → [Join the discussion](https://github.com/ginobefun/BestBlogs/discussions)
 
 ### Historical Archive
@@ -337,11 +338,11 @@ If you're interested in RSS, AI-powered reading, agent workflows, high-quality s
 | **WeChat Group** | Day-to-day chat, feedback, and source recommendations; if the QR code expires, add **ginobot** on WeChat to join |
 | **WeChat Official Account** | Product updates, source curation, and reading tips → [Follow](https://mp.weixin.qq.com/s/PjLi-o2-kxIWqIGT7_0o4A?scene=1) |
 | **Feishu Group** | Deeper product, engineering, and ops discussions → [Join](https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=e71u9acd-3f93-4d7d-95b2-94111c51a668) |
-| **Xiaoyuzhou (Chinese)** | Chinese daily brief, curated picks, and product news → [Listen](https://www.xiaoyuzhoufm.com/podcast/69acf4bcfe570e1a10f20f73) |
-| **Xiaoyuzhou (English)** | English curated content and BestBlogs updates → [Listen](https://www.xiaoyuzhoufm.com/podcast/6a1f845cf18021cbae82c1f2) |
+| **Xiaoyuzhou Podcast** | Chinese daily brief, curated picks, and product news → [Listen](https://www.xiaoyuzhoufm.com/podcast/69acf4bcfe570e1a10f20f73) |
 | **Apple Podcasts** | For listeners who prefer Apple Podcasts → [Subscribe](https://podcasts.apple.com/us/podcast/bestblogs/id1896876403) |
 | **Public Repo** | OPML, source lists, OpenAPI, CLI, and Agent skills → [BestBlogs on GitHub](https://github.com/ginobefun/BestBlogs) |
 | **Author's Blog** | Product iteration, architecture, growth, and indie dev notes → [GinoNotes](https://www.ginonotes.com/) |
+| **Official X** | Product updates, daily brief, and curated content → [@BestBlogsDev](https://x.com/BestBlogsDev) |
 | **Gino on X** | BestBlogs, AI reading, RSS, agents, and indie dev → [@hongming731](https://x.com/hongming731) |
 | **Xiaoguang on X** | Product, content, community, startups, and reading experience → [@puliandc](https://x.com/puliandc) |
 
@@ -371,3 +372,5 @@ Thanks to the following open-source projects:
 - [XGo.ing](https://xGo.ing) — Twitter/X RSS feeds
 - [Bark](https://github.com/Finb/Bark) — iOS push notifications
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma) — self-hosted monitoring
+
+---

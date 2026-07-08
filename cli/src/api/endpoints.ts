@@ -29,6 +29,8 @@ export const onboarding = {
     request<unknown>('/openapi/v2/me/onboarding/recommended-sources', { query: params }),
   follow: (sourceIds: string[]) =>
     request<unknown>('/openapi/v2/me/onboarding/follow', { method: 'POST', body: { sourceIds } }),
+  unfollow: (sourceIds: string[]) =>
+    request<unknown>('/openapi/v2/me/onboarding/follow', { method: 'DELETE', body: { sourceIds } }),
   complete: () =>
     request<unknown>('/openapi/v2/me/onboarding/complete', { method: 'POST' }),
 }

@@ -1,6 +1,6 @@
 # BestBlogs 术语与统一表达
 
-更新时间：2026-05-19  
+更新时间：2026-07-06
 状态：v2.4.0 重写草案（承接 VISION + PRODUCT + BRAND + ARCHITECTURE + DESIGN + UI-SPEC v2）
 
 > 本文档用于统一 BestBlogs 在产品、设计、文案、架构、运营、代码和对外表达中的关键术语。
@@ -142,6 +142,7 @@
 | 媒体资料 | 完整定位句 |
 | 社交媒体轻介绍 | 中文自然版定位 |
 | 长期战略材料 | 长期方向说明 |
+| 每日早报收尾（podcast-markdown / shownotes / 播客口播 outro） | BestBlogs 是 AI 驱动的私人阅读助手，帮助你发现真正适合你的高质量内容，欢迎体验（EN: BestBlogs is an AI-powered personal reading assistant that helps you discover high-quality content that truly fits you — give it a try）；维护在 `bestblogs-ops-skills/skills/bestblogs-daily-briefing/scripts/brand_copy.py` |
 
 ---
 
@@ -160,6 +161,9 @@
 | 高质量信息输入 | High-quality Information Input | BestBlogs 帮助用户建立的稳定、可信、个性化的信息输入方式 | 品牌、产品、愿景主用 | 核心价值表达 |
 | 跨平台、跨媒介、跨语言的质量判断体系 | Quality judgment system across platforms, media, and languages | BestBlogs 的核心能力和护城河表达 | 产品文档、架构文档主用 | 可在长文档中完整使用 |
 | 编辑选目 | Editor's Selection / Editorial Picks | 公共策展层每日精选内容的拟人化表达，承载「克制、有判断力、宁少勿滥」的编辑态度 | 内容广场副标题、策展层品牌描述、对外文案 | 与「精选 (qualified)」的运营状态区分：编辑选目是品牌叙事，精选是运营标记 |
+| 多平台发布 | Multi-platform Publish | 管理员将 BestBlogs 内容快速发送到多个外部内容平台的运营动作，可承载动态短消息和长内容 | 管理后台、产品文档、架构文档 | 替代含混的「分发」表达；不作为普通读者功能开放，内部实现可保留 PublishTask |
+| 动态短消息 | Short Post | 适合社交动态的一句话摘要、文章金句等短内容 | 用户可见、产品文档 | 不写成短文案分发 |
+| 长内容 | Long Content | 适合长文平台的完整摘要、选中段落或较长摘录 | 用户可见、产品文档 | 后续可接 LLM 润色，但当前不是必需语义 |
 
 ---
 
